@@ -75,46 +75,36 @@ a{text-decoration: none;}
     opacity: 1;
     visibility: visible;
 }
-.menu-button p{
-    margin-bottom: 0 !important
-}
-.menu-button p a {
-    display: inline-block;
-    text-decoration: none;
-    font-size: 16px;
-    margin-top: 9px;
+.header .menu-button {
     color: #3d63eb;
     background-color: #fff;
-    padding: 11px 22px;
-    border-radius: 30px;
-    text-align: center;
-    font-weight: 500;
-}
-.menu-button a {
+    border-radius: 20px;
+    padding: 8px 20px;
     position: relative;
-    z-index: 1;
+
 }
-.menu-button a::before{
+.header .menu-button::after{
     content: "";
     position: absolute;
     top: 0;
     left: 0;
-    width: 0;
+    width:0;
     height: 100%;
-    border-radius: 30px;
-    background-color:  #3d63eb;
-    z-index: -1;
-    transition: .5s;
+    background-color: #3d63eb;
+    border-radius: 20px;
+    transition: .8s;
     opacity: 0;
     visibility: hidden;
+    z-index: -1;
 }
-.menu-button a:hover::before{
-    width: 100%;
+.header .menu-button:hover::after{
+    width:100%;
     opacity: 1;
-    visibility: visible;
+    visibility:visible;
 }
-.menu-button a:hover{
+.header .menu-button:hover{
     color: #fff !important;
+    z-index: 1 !important;
 }
 .banner{
     background-color: #edf6ff;
