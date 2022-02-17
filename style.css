@@ -76,7 +76,7 @@ a{text-decoration: none;}
     visibility: visible;
 }
 .menu-button p{
-    margin-bottom: 0;
+    margin-bottom: 0 !important
 }
 .menu-button p a {
     display: inline-block;
